@@ -43,7 +43,7 @@
 .acebox{
 	height:14em;
 	width: 30%;
-	margin-top:1em;
+	margin-top:-1em;
 	float:left;
 	margin-right:-10em;
 	font-size:20px;
