@@ -1,6 +1,6 @@
 .softcontentbox{
 	height:30em;
-	width: 50%;
+	width: 90%;
 	margin-top:5em;
 	margin-right:auto;
 	margin-left:auto;
@@ -56,12 +56,39 @@
 	width: 70%;
 	margin-top:30em;
 	background-color:white;
-	
-	
 	margin-right:auto;margin-left:auto;
 	font-size:20px;
+}
+
+.softdown{
+	margin-top:1em;
+	font-size:64px;
+	font-family:"Batch";
 	
 }
+
+.softdown a{
+	color:black;
+	text-decoration:none;
+}
+
+nav ul {
+    list-style: none;
+    width: inherit; 
+    margin: 1em; 
+		display:inline-block;
+}
+.menu{
+	width:100%;
+	font-size:20px;	
+}
+.menu a{
+	text-decoration:none;
+}
+
+
+
+
 
   /* Parallax base styles
   --------------------------------------------- */
@@ -110,8 +137,8 @@
   }
 
   .parallax__layer--nack {
-    -webkit-transform: translateZ(100px) scale(0.5);
-    transform: translateZ(100px) scale(0.5);
+    -webkit-transform: translateZ(100px) scale(0.65);
+    transform: translateZ(100px) scale(0.65);
     z-index: 3;
   }
   .parallax__layer--deep {
@@ -201,3 +228,23 @@ body{
   #group7 .parallax__layer--base {
     background: rgb(255,241,100);
   }
+
+
+
+	@font-face{
+		font-family:Batch;
+		src:url('../assets/batch.eot');
+		src:url('../assets/batch.eot?#iefix') format('embedded-opentype'),
+	          url('../assets/batch.woff') format('woff'),
+	          url('../assets/batch.ttf') format('truetype'),
+						url('../assets/batch.svg#batchregular') format('svg');
+		font-weight:normal;
+		font-style:normal;
+	}
+
+	.batch {
+		font-family:"Batch"; /*or whatever you've decalred your font name as*/
+		font-size:32px;
+		line-height:1;
+		display:inline-block;
+	}
