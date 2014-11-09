@@ -24,12 +24,12 @@ you wish to show up when hovered. All images MUST BE EXACTLY 200px by 200px.*/
 }
 
 .daikip{
-	background:url("../images/members/LOL.jpg");
+	background:url("../images/members/daiki.jpg");
 	overflow:hidden;
 	background-repeat:no-repeat;
 }
 .daikip:hover{
-	background:url("../images/members/placeholdhover.png");	
+	background:url("../images/members/daikihover.jpg");	
 	background-repeat:no-repeat;
 	height:300px;
 }
