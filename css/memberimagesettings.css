@@ -44,3 +44,52 @@ you wish to show up when hovered. All images MUST BE EXACTLY 200px by 200px.*/
 	background-repeat:no-repeat;
 	height:300px;
 }
+
+.judgep{
+	background:url("../images/members/nico.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.judgep:hover{
+	background:url("../images/members/judgehover.jpg");	
+	background-repeat:no-repeat;
+	height:300px;
+}
+
+.namp{
+	background:url("../images/members/nico.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.namp:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}
+.josephp{
+	float:left;
+	display:inline-block;
+	margin-left:8%;
+
+	background:url("../images/members/nico.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.josephp:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}
+.kolatatp{
+	background:url("../images/members/nico.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+	float:right;
+	display:inline-block;
+	margin-right:8%;
+}
+.kolatatp:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}
