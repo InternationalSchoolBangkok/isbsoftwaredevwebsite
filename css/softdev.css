@@ -75,12 +75,12 @@
 nav ul {
     list-style: none;
     width: inherit; 
-    margin: 1em; 
+    margin: 0.5em; 
 		display:inline-block;
 }
 .menu{
 	width:100%;
-	font-size:20px;	
+	font-size:15px;	
 }
 .menu a{
 	text-decoration:none;
