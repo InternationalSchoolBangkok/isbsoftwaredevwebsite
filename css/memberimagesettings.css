@@ -1,0 +1,46 @@
+/*Setting the different Profile Images. Replace placeholder.jpg 
+with your own image, and placeholdhover.png with the image
+you wish to show up when hovered. All images MUST BE EXACTLY 200px by 200px.*/
+.aditp{
+	background:url("../images/members/adit.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.aditp:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}
+
+.nicop{
+	background:url("../images/members/nico.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.nicop:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}
+
+.daikip{
+	background:url("../images/members/LOL.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.daikip:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}
+
+.katp{
+	background:url("../images/members/katrina.jpg");
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+.katp:hover{
+	background:url("../images/members/placeholdhover.png");	
+	background-repeat:no-repeat;
+	height:300px;
+}

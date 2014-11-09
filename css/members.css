@@ -1,11 +1,50 @@
+body{
+	font-family: Helvetica;
+	background-color:#F2F2F2;
+	background-position: center;
+
+}
+.header{
+	height:5em;
+	width:100%;
+	background-color:#7E8AA2;
+	display:block;
+	overflow:hidden;
+	color:#f3f3f3;
+	-webkit-transition: height 1s ease;
+  -moz-transition:height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+	-webkit-box-shadow: inset 0px -4px 14px -2px rgba(0,0,0,0.57);
+	-moz-box-shadow: inset 0px -4px 14px -2px rgba(0,0,0,0.57);
+}
+.header:hover{
+	height:20em;
+}
+.header h1{
+	margin-left:3em;
+	text-decoration:underline;
+}
+.subhead{
+	margin-left:3em;
+	margin-top:2em;
+	font-size:15px;
+}
 .groupbox{
 	width:60%;
 	margin-left:auto;
 	margin-right:auto;
 	display:inline-block;
 	text-align:center;
-
+	height:270px;
+	-webkit-transition: background, height 1s ease;
+  -moz-transition: background, height 1s ease;
+  -o-transition: background, height 1s ease;
+  transition: background, height 1s ease;
 }
+/*.groupbox:hover{
+	height:500px;
+}*/
 .left{
 	float:left;
 	width:20%;
@@ -31,49 +70,23 @@
 	margin-right:2em;
 	margin-top:2em;
 }
-.profilename{
-	text-align:center;
-	font-size:20px;
-	margin-top:1em;
-}
 
 .profileimage{
 	height:200px;
 	width:200px;
-	-webkit-transition: background 1s ease;
-  -moz-transition: background 1s ease;
-  -o-transition: background 1s ease;
-  transition: background 1s ease;
+	-webkit-transition: background, height 1s ease;
+  -moz-transition: background, height 1s ease;
+  -o-transition: background, height 1s ease;
+  transition: background, height 1s ease;
 	
 }
-
-/*Setting the different Profile Images. Replace placeholder.jpg 
-with your own image, and placeholdhover.jpg with the image
-you wish to show up when hovered. All images MUST BE EXACTLY 200px by 200px.*/
-.aditp{
-	background:url("../images/members/adit.jpg");
+.personbio{
+	margin-top:200px;
+	text-align:center;
 }
-.aditp:hover{
-	background:url("../images/members/placeholdhover.jpg");	
+.personbio p{
+	font-size:14px;
 }
 
-.nicop{
-	background:url("../images/members/nico.jpg");
-}
-.nicop:hover{
-	background:url("../images/members/placeholdhover.jpg");	
-}
 
-.daikip{
-	background:url("../images/members/LOL.jpg");
-}
-.daikip:hover{
-	background:url("../images/members/placeholdhover.jpg");	
-}
 
-.katp{
-	background:url("../images/members/katrina.jpg");
-}
-.katp:hover{
-	background:url("../images/members/placeholdhover.jpg");	
-}
