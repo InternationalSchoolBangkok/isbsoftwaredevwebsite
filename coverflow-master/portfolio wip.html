@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>portfolio</title>
+		<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="reflection.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script src="jquery.interpolate.js"></script>
+		<script src="jquery.coverflow.js"></script>
+		
+		<style>
+			h1{
+				text-align: 	center;
+				text-transform: uppercase;
+				letter-spacing: 1em;
+				font-weight: 	400;
+				color: #3c7eae;
+			}
+			
+			body {
+				font-family: 'Inconsolata', Verdana, Helvetica, Arial, sans-serif;
+				font-size: 11px;
+				background-color: #eee;
+			}
+			
+			.photos .cover {
+				cursor: pointer;
+				/*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
+			}
+
+			#photos-info {
+				position:		relative;
+				margin-left: 	auto;
+				margin-right: 	auto;
+				text-align:		center;
+				z-index:		1000;
+				margin-top: 	350px;
+				padding: 		20px;
+				width: 			600px;
+			}
+
+			#photos-name {
+				font-size: 200%;
+				letter-spacing: 3px;
+				text-transform:  lowercase;
+				font-family: 'Inconsolata';
+			}
+
+			
+			#photos-desc{
+				text-align:justify;
+				width: 200px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.clearfix {
+				clear: both;
+			}
+		</style>
+		
+		<script>
+			$(function() {
+
+				// Alphabet
+
+//				$('.coverflow').coverflow();
+//
+//				$('#first').click(function() {
+//					$('.coverflow').coverflow('index', 0);
+//				});
+//
+//				$('#last').click(function() {
+//					$('.coverflow').coverflow('index', -1);
+//				});
+
+				/* CD covers */
+
+				if ($.fn.reflect) {
+					$('.photos .cover').reflect();
+				}
+
+				$('.photos').coverflow({
+					index:			3,
+					width:			320,
+					height:			240,
+					visible:		'density',
+					selectedCss:	{	opacity: 1	},
+					outerCss:		{	opacity: .2	},
+
+					select:		function(event, cover) {
+						var img = $(cover).children().andSelf().filter('img').last();
+						$('#photos-name').text(img.data('name') || 'unknown');
+						$('#photos-desc').text(img.data('desc') || 'unknown');
+					}
+				});
+
+//				$('#leakdetect').click(function() {
+//					$('#leakbucket').empty();
+//					for (var i = 0; i < 100; ++i) {
+//						$('<div><div>test</div></div>').appendTo('#leakbucket').coverflow();
+//					}
+//				});
+			});
+		</script>
+    </head>
+    <body>
+		<h1>our portfolio</h1><br>
+		<div class="photos">
+			<img class="cover" data-name="ISB Ace" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo "src="demo/attic.jpg"/>
+			<img class="cover" data-name="ISB HS Tech Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo siri jo siri jo" src="demo/aurora.jpg"/>
+			<img class="cover" data-name="ISB Software Development Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo" src="demo/barbecue.jpg"/>
+
+		</div>
+		<div id="photos-info">
+			<div id="photos-name"></div>
+			<div id="photos-desc"></div>
+		</div>
+
+<!--		<div class="clearfix"></div>
+		<button id="leakdetect">LeakDetect</button>
+		<div id="leakbucket"></div>-->
+    </body>
+</html>
