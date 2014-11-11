@@ -67,9 +67,6 @@ you wish to show up when hovered. All images MUST BE EXACTLY 200px by 200px.*/
 	height:300px;
 }
 .josephp{
-	float:left;
-	display:inline-block;
-	margin-left:8%;
 
 	background:url("../images/members/nico.jpg");
 	overflow:hidden;
@@ -84,9 +81,7 @@ you wish to show up when hovered. All images MUST BE EXACTLY 200px by 200px.*/
 	background:url("../images/members/nico.jpg");
 	overflow:hidden;
 	background-repeat:no-repeat;
-	float:right;
-	display:inline-block;
-	margin-right:8%;
+
 }
 .kolatatp:hover{
 	background:url("../images/members/placeholdhover.png");	

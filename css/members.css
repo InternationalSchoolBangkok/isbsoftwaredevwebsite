@@ -11,7 +11,7 @@ a{
 .header{
 	height:5em;
 	width:100%;
-	background-color:#7E8AA2;
+	background-color:#636769;
 	display:block;
 	overflow:hidden;
 	color:#f3f3f3;
@@ -28,7 +28,11 @@ a{
 .header h1{
 	margin-left:3em;
 	text-decoration:underline;
-
+}
+.header h1 span{
+	margin-left:11em;
+	font-size:0.4em;
+	text-align:center;
 	
 }
 .subhead{
@@ -85,11 +89,14 @@ a{
 	margin-top:2em;
 }
 .centerprof{
-	margin-top:12em;
-	margin-left:auto;
-	margin-right:auto;
+	margin-top:24em;
+
 }
 .profilec{
+	display:inline-block;
+	position:relative;
+	margin-left:2em;
+	margin-right:2em;
 }
 
 
@@ -100,6 +107,7 @@ a{
   -moz-transition: background, height 1s ease;
   -o-transition: background, height 1s ease;
   transition: background, height 1s ease;
+	border-radius:100px;
 	
 }
 .personbio{
