@@ -26,6 +26,11 @@
 				background-color: #eee;
 			}
 			
+			a{
+				color: #3c7eae;
+				text-decoration: none;
+				font-size: 110%;
+			}
 			.photos .cover {
 				cursor: pointer;
 				/*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
@@ -39,16 +44,21 @@
 				z-index:		1000;
 				margin-top: 	350px;
 				padding: 		20px;
-				width: 			600px;
+				width: 			400px;
+				background: white;
 			}
 
 			#photos-name {
 				font-size: 200%;
 				letter-spacing: 3px;
+				line-height: 85%;
 				text-transform:  lowercase;
 				font-family: 'Inconsolata';
 			}
 
+			#photos-dl{
+				font-size: 110%;
+			}
 			
 			#photos-desc{
 				text-align:justify;
@@ -56,6 +66,7 @@
 				margin-left: auto;
 				margin-right: auto;
 			}
+			
 			.clearfix {
 				clear: both;
 			}
@@ -63,21 +74,6 @@
 		
 		<script>
 			$(function() {
-
-				// Alphabet
-
-//				$('.coverflow').coverflow();
-//
-//				$('#first').click(function() {
-//					$('.coverflow').coverflow('index', 0);
-//				});
-//
-//				$('#last').click(function() {
-//					$('.coverflow').coverflow('index', -1);
-//				});
-
-				/* CD covers */
-
 				if ($.fn.reflect) {
 					$('.photos .cover').reflect();
 				}
@@ -94,29 +90,26 @@
 						var img = $(cover).children().andSelf().filter('img').last();
 						$('#photos-name').text(img.data('name') || 'unknown');
 						$('#photos-desc').text(img.data('desc') || 'unknown');
+						$('#photos-dl').html(img.data('dl') || '');
+						$('#photos-link').html(img.data('link') || 'error');
 					}
 				});
-
-//				$('#leakdetect').click(function() {
-//					$('#leakbucket').empty();
-//					for (var i = 0; i < 100; ++i) {
-//						$('<div><div>test</div></div>').appendTo('#leakbucket').coverflow();
-//					}
-//				});
 			});
 		</script>
     </head>
     <body>
 		<h1>our portfolio</h1><br>
 		<div class="photos">
-			<img class="cover" data-name="ISB Ace" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo "src="demo/attic.jpg"/>
-			<img class="cover" data-name="ISB HS Tech Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo siri jo siri jo" src="demo/aurora.jpg"/>
-			<img class="cover" data-name="ISB Software Development Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo" src="demo/barbecue.jpg"/>
+			<img class="cover" data-name="ISB Ace" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo" data-dl="Download it here:<br><br>" data-link="<img src='android.png' width='44px' href='https://play.google.com/store/apps/details?id=com.isbhstech.isbace&hl=en'/><img src='mac.png' width='44px' href='https://sites.google.com/a/students.isb.ac.th/hstech/software-development/isb-ace'/>" src="demo/attic.jpg"/>
+			<img class="cover" data-name="ISB HS Tech Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo siri jo siri jo" data-link="<a href='http://isbhstech.com/'>View it here.</a>"src="demo/aurora.jpg"/>
+			<img class="cover" data-name="ISB Software Development Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo" data-link="You're currenty viewing it, idiot." src="demo/barbecue.jpg"/>
 
 		</div>
 		<div id="photos-info">
 			<div id="photos-name"></div>
-			<div id="photos-desc"></div>
+			<div id="photos-desc"></div><br>
+			<div id="photos-dl"></div>
+			<div id="photos-link"></div>
 		</div>
 
 <!--		<div class="clearfix"></div>
