@@ -1,17 +1,4 @@
-/* line 2193*/
-b { 
-    font-weight: bold;
-}
 
-/*Styling Sub Sub Menubar, if there is a need for one*/
-/*Setting the height of content to 100% so that the white box does not cover the slideshow*/
-.content {
-	height: 100%;
-}
-/*For some reason, if i dont't put this here, it wont work. It just colors the box below the slideshow*/
-.maincontent {
-	background: #f3f3f3;
-}
 
 
 /*menubar - edited*/
@@ -109,9 +96,7 @@ textarea {
 	tr, img {
 		page-break-inside: avoid
 	}
-	img {
-		max-width: 100% !important
-	}
+
 	@page {
 		margin: 0.5cm
 	}
@@ -247,8 +232,8 @@ h6 {
 .nav li ul{
 	display:none;
 	position:absolute;
-	top:23px;
-	left:0px;
+	top:1em;
+	left:20em;
 }
 .nav ul li:hover ul{
 	display:inline-block;
