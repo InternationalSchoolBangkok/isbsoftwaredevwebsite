@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>portfolio</title>
+		<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/members.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="reflection.js"></script>
+		<script src="jquery.mousewheel.js"></script>
+		<script src="jquery.interpolate.js"></script>
+		<script src="jquery.coverflow.js"></script>
+		
+		<style>
+			h1{
+				text-align: 	center;
+				text-transform: uppercase;
+				letter-spacing: 1em;
+				font-weight: 	400;
+				color: #3c7eae;
+			}
+			
+			body {
+				font-family: 'Arial', Verdana, Helvetica, Arial, sans-serif;
+				font-size: 11px;
+				background-color: #eee;
+			}
+			
+			a{
+				color: #3c7eae;
+				text-decoration: none;
+				font-size: 110%;
+			}
+			.photos .cover {
+				cursor: pointer;
+				/*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
+			}
+
+			#photos-info {
+				position:		relative;
+				margin-left: 	auto;
+				margin-right: 	auto;
+				text-align:		center;
+				z-index:		1000;
+				margin-top: 	350px;
+				padding: 		20px;
+				width: 			400px;
+				background: white;
+			}
+.contents{
+margin-top:1em;
+}
+			#photos-name {
+				font-size: 200%;
+				line-height: 85%;
+				text-transform:  lowercase;
+				font-family: 'Arial';
+			}
+
+			#photos-dl{
+				font-size: 110%;
+			}
+			
+			#photos-desc{
+				text-align:justify;
+				width: 200px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.clearfix {
+				clear: both;
+			}
+		</style>
+		
+		<script>
+			$(function() {
+				if ($.fn.reflect) {
+					$('.photos .cover').reflect();
+				}
+
+				$('.photos').coverflow({
+					index:			3,
+					width:			320,
+					height:			240,
+					visible:		'density',
+					selectedCss:	{	opacity: 1	},
+					outerCss:		{	opacity: .2	},
+
+					select:		function(event, cover) {
+						var img = $(cover).children().andSelf().filter('img').last();
+						$('#photos-name').text(img.data('name') || 'unknown');
+						$('#photos-desc').text(img.data('desc') || 'unknown');
+						$('#photos-dl').html(img.data('dl') || '');
+						$('#photos-link').html(img.data('link') || 'error');
+					}
+				});
+			});
+		</script>
+    </head>
+    <body>
+		<div class="nav">
+		      <ul>
+				
+		        <li class="home"><a href="../index.html">Home</a></li>
+		        <li class="tutorials"><a href="../port/portfolio%20wip.html">Projects</a></li>
+		        <li class="about"><a href="../hovermemb.html">Our Team</a></li>
+		        <li class="contact"><a href="../contact.html">Contact</a></li>
+		      </ul>
+		    </div>
+	<div class="contents">
+		<h1>our portfolio</h1><br>
+		<div class="photos">
+			
+			
+			
+			
+			<img class="cover" data-name="ISB Ace" data-desc="ITS AN"  data-link="EASTER EGG!"/> 
+			<img class="cover" data-name="ISB HS Tech Website" data-desc="The ISB HS Tech website was made by us, as we work very closely with them. The basics are done, but this still is a major ongoing project for Softdev" data-link="<a href='http://isbhstech.com/'>View it here.</a>"src="demo/aurora.jpg"/>
+			<img class="cover" data-name="ISB Software Development Website" data-desc="siri jo siri jo siri jo siri jo siri jo siri jo" data-link="You're currenty viewing it, idiot." src="demo/barbecue.jpg"/>
+			<img class="cover" data-name="ISB ACE" data-desc="How do ISB Students ACE at school? They use ISB ACE!! This app, developed by Software Development, is an app that has features such as a grade viewer and a newsfeed from ISB's very own Panther Nation." data-link="<a href='https://sites.google.com/a/students.isb.ac.th/hstech/software-development/isb-ace'>Mac Download</a> <br> <a href='https://play.google.com/store/apps/details?id=com.isbhstech.isbace&hl=en'>Android Download</a>" src="demo/barbecue.jpg"/>
+
+		</div>
+		</div>
+		<div id="photos-info">
+			<div id="photos-name"></div>
+			<div id="photos-desc"></div><br>
+			<div id="photos-dl"></div>
+			<div id="photos-link"></div>
+		</div>
+
+<!--		<div class="clearfix"></div>
+		<button id="leakdetect">LeakDetect</button>
+		<div id="leakbucket"></div>-->
+    </body>
+</html>

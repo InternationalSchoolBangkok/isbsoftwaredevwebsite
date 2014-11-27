@@ -1,11 +1,8 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+
 body {
 	background:url("../images/members/noise_light-grey.jpg");
 	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 200;
+
 }
 
 h1 {
@@ -129,4 +126,18 @@ ul.rig.columns-4 li {
 		width: 100% !important; /* over-ride all li styles */
 		margin: 0 0 20px;
 	}
+}
+.biograph{
+	height:265px;
+	overflow:hidden;
+	-webkit-transition:  height 1s ease;
+  -moz-transition:  height 1s ease;
+  -o-transition:  height 1s ease;
+  transition:height 1s ease;
+position:relative;
+}
+.biograph:hover{
+
+	height:460px;
+	
 }
