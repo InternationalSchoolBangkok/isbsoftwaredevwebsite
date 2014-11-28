@@ -1,5 +1,0 @@
-isbhstechwebsite
-================
-
-Please do not make ANY drastic changes to this site. Contact me if you wish to do something on this site, as one error in the code can mess up everything.
-defaultcode1@gmail.com
