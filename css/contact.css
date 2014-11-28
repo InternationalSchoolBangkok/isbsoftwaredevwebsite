@@ -1,0 +1,41 @@
+body{
+	background:url("../images/contactimages/back.jpg");
+}
+.text{
+	height:310px;
+	width:100%;
+
+}
+
+.contactbox {
+	position: absolute; 
+	top: 13%; 
+	width: 100%; 
+	text-align:center;
+	width: 40%;
+	padding-bottom: 22px;
+	left:57%;
+	margin-right: 3em;
+	background-color: rgba(198,198,198,0.8);
+
+}
+.contacttext {
+	position: relative;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 2em;
+}
+.contacttext a {
+	text-decoration: none;
+	font-size: 1.3em;
+	margin-left: 1em;
+	color:white;
+	font-style:bold;
+}
+.contactsocial {
+	margin-top: 2em;
+	text-align: center;
+	padding: -3em;
+	border-top: 1px solid #BDBDBD;
+	border-collapse: separate;
+}
