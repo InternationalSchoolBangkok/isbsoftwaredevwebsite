@@ -42,8 +42,8 @@
 				margin-left: 	auto;
 				margin-right: 	auto;
 				text-align:		center;
-				z-index:		1000;
-				margin-top: 	350px;
+				z-index:		99999999;
+				margin-top: 	270px;
 				padding: 		20px;
 				width: 			400px;
 				background: white;
@@ -78,10 +78,6 @@
 		
 		<script>
 			$(function() {
-				if ($.fn.reflect) {
-					$('.photos .cover').reflect();
-				}
-
 				$('.photos').coverflow({
 					index:			3,
 					width:			320,
@@ -102,12 +98,7 @@
 		</script>
     </head>
     <body>
-            <div class="nav" style="font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 200;
-	font-size: 1.4em;
-	line-height: 50px;
-	color: #333333;
-	background-color: #ffffff">
+            <div class="nav"style="font-family: 'Helvetica Neue', arial, sans-serif;font-weight: 200;font-size: 1.4em;line-height: 50px;color: #333333;background-color: #ffffff">
 			      <ul>
 			        <li class="home"><a href="index.html">Home</a></li>
 			        <li class="tutorials"><a href="portfolio.html">Projects</a></li>
@@ -115,7 +106,7 @@
 			        <li class="contact"><a href="contact.html">Contact</a></li>
 			      </ul>
 			    </div>
-		<h1>our portfolio</h1><br>
+		<h1>our portfolio</h1>
 		<div class="photos">
 			<img class="cover" data-name="ISB Ace for OS X" data-desc="ISB Ace was the first project to be developed by the ISB Software Development club. This application features a variety of useful tools to assist the every-day ISB student! These features include:<br>
 <ul><li>Your current grades</li>
@@ -135,8 +126,7 @@ Currently ISB Ace is available for Android devices and OSX, however the Software
 
 		</div>
 		<div id="photos-info">
-            <div id="photos-name-container"><div id="photos-name-double-container">
-			<div id="photos-name"></div></div></div>
+			<div id="photos-name"></div>
 			<div id="photos-desc"></div><br>
 			<div id="photos-dl"></div>
 			<div id="photos-link"></div>
