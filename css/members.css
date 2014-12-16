@@ -52,20 +52,14 @@ ul.grid-nav li {
 }
 ul.grid-nav li a {
 	display: inline-block;
-	background: #999;
-	color: #fff;
+
 	padding: 10px 20px;
 	text-decoration: none;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 }
-ul.grid-nav li a:hover {
-	background: #7b0;
-}
-ul.grid-nav li a.active {
-	background: #333;
-}
+
 .grid-container {
 	display: none;
 }
@@ -85,6 +79,8 @@ ul.rig li {
 	font-size: 1rem;
 	vertical-align: top;
 	box-shadow: 0 0 5px #ddd;
+	height:270px;
+	overflow:hidden;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -138,19 +134,7 @@ ul.rig.columns-4 li {
 		margin: 0 0 20px;
 	}
 }
-.biograph{
-	width:300px;
 
-	-webkit-transition:  height 1s ease;
-  -moz-transition:  height 1s ease;
-  -o-transition:  height 1s ease;
-  transition:height 1s ease;
-position:relative;
-}
-/*.biograph:hover{
-
-	height:460px;
-}*/
 .pseudolink{
 	color: #0088cc;
 	text-decoration: none;
