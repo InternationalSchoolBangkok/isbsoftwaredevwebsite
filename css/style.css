@@ -12,13 +12,9 @@ img {
 	-ms-interpolation-mode: bicubic
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> FETCH_HEAD
 body {
 	margin: 0;
-	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-family: 'Helvetica';
 	font-weight: 200;
 	font-size: 14px;
 	line-height: 20px;
@@ -40,15 +36,6 @@ a:hover, a:focus {
 .container {
 	margin-right: auto;
 	margin-left: auto;
-	*zoom: 1
-}
-.container:before, .container:after {
-	display: table;
-	content: "";
-	line-height: 0
-}
-.container:after {
-	clear: both
 }
 p {
 	margin: 0 0 10px
@@ -143,8 +130,3 @@ h6 {
     display: inline-block;
     margin-right: -4px;
   }
-
-<<<<<<< HEAD
-=======
-/*Custom Font*/
->>>>>>> FETCH_HEAD
