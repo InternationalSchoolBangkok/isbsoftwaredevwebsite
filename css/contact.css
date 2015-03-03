@@ -1,5 +1,6 @@
 body{
 	background:url("../images/contactimages/back.jpg");
+	background-size: 100% auto
 }
 .text{
 	height:310px;
