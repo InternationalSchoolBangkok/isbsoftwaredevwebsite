@@ -1,8 +1,4 @@
-html {
-	font-size: 100%;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%
-}
+
 img {
 	max-width: 100%;
 	width: auto\9;
@@ -19,7 +15,7 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 	color: #333333;
-	background-color: #ffffff
+	background-color: black;
 }
 a {
 	color: #0088cc;
