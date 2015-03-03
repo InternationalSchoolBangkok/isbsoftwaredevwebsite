@@ -1,85 +1,75 @@
 body {
-	background:url("../images/members/group.jpg");
+	background:url("../images/members/background.png");
+
 	font-family: 'Helvetica';
-	background-size: 100% ;
+	background-size: 100% 100% ;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-hr {
-	border-top: 1px solid #ccc;
-	margin: 25px 0;
-	clear: both;
-}
-.centered {
-	text-align: center;
-}
-.wrapper {
-	width: 100%;
-	padding: 30px 0;
-}
-.container {
-	margin: 0 auto;
-}
 
-ul.grid-nav {
-	list-style: none;
-	font-size: .85em;
-	font-weight: 200;
-	text-align: center;
-}
-ul.grid-nav li {
-	display: inline-block;
-}
-ul.grid-nav li a {
-	display: inline-block;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-}
-
-.grid-container {
-	display: none;
-}
-/* ----- Image grids ----- */
-ul.rig {
-	list-style: none;
-	font-size: 0px;
-	margin-left: -2.5%; /* should match li left margin */
-}
-ul.rig li {
-	display: inline-block;
-	background: #fff;
-	vertical-align: top;
-	height:270px;
-	overflow:hidden;
+table {
+	margin-left:15%;
+	table-layout:fixed;
+	margin-top:10px;
 	
 }
-ul.rig li img {
-	max-width: 100%;
-	height: auto;
-	margin: 0 0 10px;
-}
-ul.rig li h3 {
-	margin: 0 0 5px;
-}
-ul.rig li p {
-	line-height: 1.5em;
-	color: #999;
-}
-/* class for 4 columns */
-ul.rig.columns-4 li {
-	width: 22.5%; /* this value + 2.5 should = 25% */
-}
 
-
-.footer{
-	text-align:center;
+table tr td img {
 	width:100%;
-	height:10%;
-	margin-top:8em;
-	background-color: rgba(0, 0, 0, 0.4);
-		text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.9);
-		color:#E3E3E3;
+	border-radius: 10px 10px 0px 0px;
+	display:block;
 }
+
+div.name {
+	
+	text-align:center;
+	height:20%;
+	padding-top:8px;
+	padding-bottom:8px;
+	color:black;
+	background-color:#FAFAFA;
+	border-radius: 0px 0px 10px 10px;
+	font-family:Helvetica;
+}
+
+img.span {
+	
+	height:22%;
+	
+}
+
+
+
+table tr td {
+	padding: 20px;
+}
+
+.spanspan {
+	padding-left:20px;
+	padding-right:20px;
+}
+h1{
+	color:white;
+	font-family:Helvetica;
+	padding-top:40px;
+
+}
+
+#biowrapper{
+	height:38%;
+	width:100%;
+	background-color:#FAFAFA;
+	border-radius: 0px 0px 10px 10px;
+}
+#bio{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left: 20px;
+	padding-right:20px;
+}
+
+#bioheader {
+	text-align:center;
+	font-size:18px;
+}
+

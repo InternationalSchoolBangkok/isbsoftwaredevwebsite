@@ -1,247 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Members</title>
-<!--Css Linking-->
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/members.css">
-<link rel="stylesheet" href="assets/jquery.remodal.css">
+	<head>
+		<title>Members</title>
+		<script type="text/javascript" src="js/bio.js"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/members.css">
 
-<!--Easter Egg-->
-<script type="text/javascript">
-         function playSound(el,soundfile) {
-             if (el.mp3) {
-                 if(el.mp3.paused) el.mp3.play();
-                 else el.mp3.pause();
-             } else {
-                 el.mp3 = new Audio(soundfile);
-                 el.mp3.play();
-             }
-         }
-</script>
-</head>
-<!--End Of Head-->
-<!--Start of Body-->
-<body>
-<!--Navigation Bar-->
-	<div class="nav">
-	      <ul>	
-	        <li class="home"><a href="index.html">Home</a></li>
-	        <li class="tutorials"><a href="portfolio.html">Projects</a></li>
-	        <li class="about"><a href="memb.html">Our Team</a></li>
-	        <li class="contact"><a href="contact.html">Contact</a></li>
-	      </ul>
-	</div>
-<!--End of Navigation Bar-->
-<!--Start of Body-->
-<div class="remodal-bg">
-<div class="wrapper">
-	<div class="container">
-		<h1>Our Team</h1>
-		<h5 style="font-style:italic; text-align:center"> </h5>
-		<ul class="grid-nav"><hr />
-		<!--Start of Member List-->
-		<div id="two-columns" class="grid-container" style="display:block;">
-			<ul class="rig columns-4">
-				<li >
-					<img src="images/members/nico.jpg" />
-					<h3><a href="#nico">Nico</a></h3>
-					<div class="remodal" data-remodal-id="nico">
-					    <h1>Nico</h1>
-					    <p>
-					        Nico has always been fascinated by society's ironic disability to craft its own software despite its utmost dependence on it. He realized that kids had the intelligence to do brilliant things but almost none where utilizing it to do so. All that was required was a push in the right direction.  Thus, the software development club was born.
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
+	</head>
+	<!--End Of Head-->
+	<!--Start of Body-->
+	<body onload="showbio(0);">
+		<!--Navigation Bar-->
+		<div class="nav">
+			<ul>
+				<li class="home">
+					<a href="index.html">Home</a>
 				</li>
-				<li>
-					<img src="images/members/adit.jpg" />
-					<h3><a href="#adit">Adit</a></h3>
-					<div class="remodal" data-remodal-id="adit">
-					    <h1>Adit</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
+				<li class="tutorials">
+					<a href="portfolio.html">Projects</a>
 				</li>
-				<li>
-					<img src="images/members/kolatat.jpg" />
-					<h3><a href="#kolatat">Kolatat</a></h3>
-					<div class="remodal" data-remodal-id="kolatat">
-					    <h1>Kolatat</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
+				<li class="about">
+					<a href="memb.html">Our Team</a>
 				</li>
-				<li>
-					<img src="images/members/daiki.jpg" />
-					<h3><a href="#daiki">Daiki</a></h3>
-					<div class="remodal" data-remodal-id="daiki">
-					    <h1>Daiki</h1>
-					    <p>
-					        <span id="dummy" onclick="playSound(this, 'daikisecret.mp3');">Daiki happens to be a 14 year old Japanese web designer that likes to infinitely solve the Rubik's cube, each under 35 seconds. He is obsessed with easter eggs. In other words, find the easter egg(s). <br>
-							    </span><span 
-								   class="pseudolink" 
-								   onclick="location='http://hatterkiller.github.io'">
-								Visit My Site
-								</span>
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/joseph.jpg" />
-					<h3><a href="#joseph">Joseph</a></h3>
-					<div class="remodal" data-remodal-id="joseph">
-					    <h1>Joseph</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/katrina.jpg" />
-					<h3><a href="#kat">Kat</a></h3>
-					<div class="remodal" data-remodal-id="kat">
-					    <h1>Kat</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/judgehover.jpg" />
-					<h3><a href="#judge">Judge</a></h3>
-					<div class="remodal" data-remodal-id="judge">
-					    <h1 onclick="alert('YOU CLICKED ON ME. FUCK YOU BITCH.');">Judge</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/placeholdhover.png" />
-					<h3><a href="#sorn">Sorn</a></h3>
-					<div class="remodal" data-remodal-id="sorn">
-					    <h1>Sorn</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/ryan.jpg" />
-					<h3><a href="#ryan">Ryan</a></h3>
-					<div class="remodal" data-remodal-id="ryan">
-					    <h1>Ryan</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/ridh.jpg" />
-					<h3><a href="#ridh">Ridh</a></h3>
-					<div class="remodal" data-remodal-id="ridh">
-					    <h1>Ridh</h1>
-					    <p>
-					        Riddh Bedi is the General Manager of HS Tech, and a programmer at Software Development Club. Ever since he was a child, he always had a knack for technology and through HS Tech he was able to learn and share knowledge. Born in India, Riddh joined ISB in 2008 and grew up with many multi-cultural influences. In his free time, Riddh enjoys playing video games, badminton and volunteering in community service activities.
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/placeholdhover.png" />
-					<h3><a href="#alessio">Alessio</a></h3>
-					<div class="remodal" data-remodal-id="alessio">
-					    <h1>Alessio</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/placeholdhover.png" />
-					<h3><a href="#nam">Nam</a></h3>
-					<div class="remodal" data-remodal-id="nam">
-					    <h1>Nam</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/rod.jpg" />
-					<h3><a href="#rod">Rod</a></h3>
-					<div class="remodal" data-remodal-id="rod">
-					    <h1>Rod</h1>
-					    <p>
-					        <!--Insert Your Bio Here-->
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
-				</li>
-				<li>
-					<img src="images/members/ben.jpg" />
-					<h3><a href="#ben">Ben</a></h3>
-					<div class="remodal" data-remodal-id="ben">
-					    <h1>Ben</h1>
-					    <p>
-					        Ben is one of the developers of Software Development club. Ever since he was a child, teachers have praised him for your knowledge of technology. He was born in Thailand and have gone to ISB since Kindergarden, growing up in an liberal international community. In your free time, he studies physics, hangs out with his best friend Aditya, and plays video games.
-							
-					    </p>
-					    <br>
-					    <a class="remodal-confirm" href="#">Close</a>
-					</div>
+				<li class="contact">
+					<a href="contact.html">Contact</a>
 				</li>
 			</ul>
 		</div>
-		<!--End of Member List-->
-		
-		<!--Group Photo Text-->
-		<div class="footer">
-			<h2>Group Photo</h2>
-		</div>
-		
-	
-		<hr />
-		
-	</div>
-	<!--/.container-->
-</div>
-<!--/.wrapper-->
-</div>
-<!--Scripting-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="assets/jquery.remodal.js"></script>
+		<!--End of Navigation Bar-->
+		<!--Start of Body-->
+<h1>Meet the Team</h1>
+		<table width="70%" >
+			<tr>
+				<td onmouseover="showbio(1);" onmouseout="showbio(0);">
+				<img src="images/members/nico.jpg">
 
-</body>
+					<div class="name">
+						Nico
+					</div>
+				</td>
+				<td colspan="2" rowspan="2" class="spanspan"><img class="span" src="images/members/group.jpg">
+					<div id="biowrapper"><div id="bio"><p id="bioheader"></p><p id="biotext"></p></div></div>
+					
+				</td>
+			
+				<td onmouseover="showbio(2);" onmouseout="showbio(0);"><img src="images/members/adit.jpg">
+				<div class="name">
+					Adit
+				</div> </td>
+			</tr>
+			<tr>
+				<td onmouseover="showbio(3);" onmouseout="showbio(0);"><img src="images/members/kolatat.jpg">
+				<div class="name">
+					Kolatat
+				</div></td>
+				<td onmouseover="showbio(4);" onmouseout="showbio(0);"><img src="images/members/judgehover.jpg">
+				<div class="name">
+					Judge
+				</div></td>
+			</tr>
+			<tr>
+				<td onmouseover="showbio(5);" onmouseout="showbio(0);"><img src="images/members/katrina.jpg">
+				<div class="name">
+					Kat
+				</div></td>
+				<td onmouseover="showbio(6);" onmouseout="showbio(0);"><img src="images/members/daiki.jpg">
+				<div class="name">
+					Daiki
+				</div><td onmouseover="showbio(7);" onmouseout="showbio(0);"><img src="images/members/ridh.jpg">
+				<div class="name">
+					Riddh
+				</div></td><td onmouseover="showbio(8);" onmouseout="showbio(0);"><img src="images/members/joseph.jpg">
+				<div class="name">
+					Joseph
+				</div></td>
+			</tr>
+			<tr>
+				<td onmouseover="showbio(9);" onmouseout="showbio(0);"><img src="images/members/ben.jpg">
+				<div class="name">
+					Ben
+				</div>
+				<td onmouseover="showbio(10);" onmouseout="showbio(0);"><img src="images/members/nam.jpg">
+				<div class="name">
+					Nam
+				</div></td><td onmouseover="showbio(11);" onmouseout="showbio(0);"><img src="images/members/rod.jpg">
+				<div class="name">
+					Rod
+				</div></td><td onmouseover="showbio(12);" onmouseout="showbio(0);"><img src="images/members/ryan.jpg">
+				<div class="name">
+					Ryan
+				</div></td>
+			</tr>
+		</table>
+
+	</body>
 </html>
 <!--End-->
-<!--REMODAL JQUERY PLUGIN COPYRIGHT (C) 2014 ILYA MAKAROV, HTTP://VODKABEARS.GITHUB.IO-->
