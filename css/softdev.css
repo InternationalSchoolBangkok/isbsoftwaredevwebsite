@@ -55,7 +55,8 @@ h1 {
 	font-family: "Lucida Grande";
 	font-size: 18px;
 	color: white;
-	line-height: 90px; 
-
+}
+#title h3{
+	line-height:10px;
 }
 
