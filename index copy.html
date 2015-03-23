@@ -10,14 +10,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<style>
 	svg{
-		margin-top:-7em;
+		margin-top:-17.3em;
+		top:200;
+		position:absolute;
+		max-width:100vw;
 	
 	}
 	#landingContent{
 		max-height:100vh;
 		overflow:hidden;
+		width:100vw;
+		
 	}
 	
+	body{
+		max-width:100vw;
+		overflow:hidden;
+	}
 
 	</style>
 
@@ -35,6 +44,44 @@
 			        window.location.hash = target;
 			    });
 			});
+	
+		});
+
+		$(window).scroll(function() {
+		    if ($(window).scrollTop() > 10) {
+			  	  $('.middle').css({
+				      	'-webkit-animation': 'rotate-mid 2s cubic-bezier(.49,.05,.32,1.04)'
+				    });
+			 	  $('.top-blue').css({
+				      	'-webkit-animation': 'rotate-tb 2s cubic-bezier(.49,.05,.32,1.04)',
+							 '-webkit-animation-fill-mode': 'forwards' 
+				    });
+				  $('.bottom-blue').css({
+				      	'-webkit-animation': 'rotate-bb 2s cubic-bezier(.49,.05,.32,1.04)',
+				'-webkit-animation-fill-mode': 'forwards' 
+				    });
+	 		 	  $('.left-white').css({
+				      	'-webkit-animation': 'rotate-lw 2s cubic-bezier(.49,.05,.32,1.04)',
+				'-webkit-animation-fill-mode': 'forwards' 
+				    });
+					$('.right-white').css({
+					      	'-webkit-animation': 'rotate-rw 2s cubic-bezier(.49,.05,.32,1.04)',
+					'-webkit-animation-fill-mode': 'forwards' 
+					});		
+			} 
+		});
+		$(window).scroll(function() {
+		    if ($(window).scrollTop() > 243) {
+			  		$('svg').css({
+					      	'position': 'fixed',
+							'margin-top':'-34.9em'
+					});
+			} else if ($(window).scrollTop() < 243) {
+							$('svg').css({
+							      	'position': 'absolute',
+									'margin-top':'-17.3em'
+							});}
+			
 		});
 		</script>
 
@@ -51,91 +98,77 @@
 		</ul>
 	</div>
 	<div id="landingContent">
+	
 		<style>
 		.bottom-blue {
 			-webkit-transform-origin: 50% 50%;
-			-webkit-animation: rotate-bb 2s cubic-bezier(.49,.05,.32,1.04);
+			/*-webkit-animation: rotate-bb 2s cubic-bezier(.49,.05,.32,1.04);
 			/*-webkit-animation-delay: 2s;*/
 		}
 		.top-blue{
 			-webkit-transform-origin: 50% 50%;
-			-webkit-animation: rotate-tb 2s cubic-bezier(.49,.05,.32,1.04);
- 			/*-webkit-animation-delay: 2s;*/
+			
+			/*-webkit-animation: rotate-tb 2s cubic-bezier(.49,.05,.32,1.04);
+			/*-webkit-animation-delay: 2s;*/
 		}
 		.middle{
 			-webkit-transform-origin: 50% 50%;
-			-webkit-animation: rotate-mid 2s cubic-bezier(.49,.05,.32,1.04);
- 			/*-webkit-animation-delay: 2s;*/
+/*			-webkit-animation: rotate-mid 2s cubic-bezier(.49,.05,.32,1.04);*/
+			/*-webkit-animation-delay: 2s;*/
 		}
 		.left-white{
 			-webkit-transform-origin: 50% 50%;
-			-webkit-animation: rotate-lw 2s cubic-bezier(.49,.05,.32,1.04);
- 			/*-webkit-animation-delay: 2s;*/
+		/*	-webkit-animation: rotate-lw 2s cubic-bezier(.49,.05,.32,1.04);
+			/*-webkit-animation-delay: 2s;*/
 		}
 		.right-white{
 			-webkit-transform-origin: 50% 50%;
-			-webkit-animation: rotate-rw 2s cubic-bezier(.49,.05,.32,1.04);
- 			/*-webkit-animation-delay: 2s;*/
+		/*	-webkit-animation: rotate-rw 2s cubic-bezier(.49,.05,.32,1.04);
+			/*-webkit-animation-delay: 2s;*/
 		}
 
 		@-webkit-keyframes rotate-mid {
-			0% {-webkit-transform: rotate(31deg);}
+			0% {-webkit-transform: rotate(30deg);}
+			100% {
+				-webkit-transform: rotate(0deg);
+				}	
+
 		}
 		@-webkit-keyframes rotate-tb {
-			0% {-webkit-transform: rotate(-30deg);fill:#1E70C0;}
-			100% {-webkit-transform: translate(16em,152.5px);fill:#104689;}
+		 0% {fill:#1E70C0;}
+			100% {
+				-webkit-transform: rotate(30deg) translate(40pc,-2.69pc); fill:#104689;
+				}
 		}
 		@-webkit-keyframes rotate-bb {
-			0% {-webkit-transform: rotate(-30deg); fill:#1E70C0;}
-			100% {-webkit-transform: translate(-15em,-153px); fill:#104689;}
+			0% {fill:#1E70C0;}
+			100% {-webkit-transform: rotate(30deg) translate(-40pc,2.5pc); fill:#104689;}
 		}
 		@-webkit-keyframes rotate-rw {
-			0% {-webkit-transform: rotate(205deg); fill:#E7E7E7;}
-			100% {-webkit-transform: translate(-13em,43.5px); fill:#104689;}
-		}
+			0% {fill:#E7E7E7;}
+			100% {-webkit-transform: rotate(-30deg) translate(37pc,23.1pc);fill:#104689;}}
 		@-webkit-keyframes rotate-lw {
-			0% {-webkit-transform: rotate(205deg); fill:#E7E7E7;}
-			100% {-webkit-transform: translate(3em,-50.5px); fill:#104689;}
-		}
+			0% {fill:#E7E7E7;}
+			100% {-webkit-transform: rotate(-30deg) translate(-40pc,-22.65pc);fill:#104689;}}
 		*{
 			margin:0;
 		}
 
 		</style>
-
 		<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-		<svg width="1280px" height="880px" viewBox="0 0 1280 880" version="1.1">
-		  <defs>
-		    <rect id="path-1" x="0" y="0" width="1280" height="880">
-		    </rect>
-		  </defs>
-
-		<!--Left White-->
-		      <g  id="Rectangle-2-+-Rectangle-1-+-Rectangle-3" mask="url(#mask-2)">
-		        <g transform="translate(-110.000000, 54.000000)">
-		          <path class="left-white" d="M-23.0037047,290.594641 L-23.0037047,372.594641 L693.384373,372.594641 L649.376917,290.594641 L-23.0037047,290.594641 Z" id="Rectangle-7" fill="#104689" sketch:type="MSShapeGroup" transform="translate(334.996295, 331.594641) rotate(208.000000) translate(-334.996295, -331.594641) ">
-		          </path>
-		<!--Middle-->
-		          <g id="Rectangle-2-+-SOFTWARE-DEVELOPMENT" stroke-width="1" fill="none" sketch:type="MSLayerGroup" transform="translate(569.000000, 150.000000)">
-		            <path class="middle"  d="M294.30136,91.8203125 L19.9341913,89.8203125 L11.2355347,106.55661 L-5.3125,131.60591 L14.1266918,140.65353 L68.8308481,171.820312 L343.138477,171.820312 L352.850098,151.864857 L366.6875,130.098947 L332.149323,111.057262 L294.30136,91.8203125 Z" id="Rectangle-2" fill="#104689" sketch:type="MSShapeGroup" transform="translate(180.687500, 130.820312) rotate(31.000000) translate(-180.687500, -130.820312) ">
-		            </path>
-
-		          </g>
-		<!--Bottom Blue-->
-		          <path class="bottom-blue" d="M542.5,395.866025 L568.447563,434.866025 L595.038658,474.250509 L914.5,473.866025 L914.5,395.866025 L542.5,395.866025 Z" id="Rectangle-1" fill="#104689" sketch:type="MSShapeGroup" transform="translate(728.500000, 433.866025) rotate(-30.000000) translate(-728.500000, -433.866025) ">
-		          </path>
-		<!--Right White-->
-		          <path class="right-white" d="M944.056426,196.863402 L806.705703,196.863402 L845.141119,278.863402 L1620.73325,278.863402 L1620.73325,196.863402 L944.056426,196.863402 Z" id="Rectangle-5" fill="#104689" sketch:type="MSShapeGroup" transform="translate(1213.705703, 237.863402) rotate(205.000000) translate(-1213.705703, -237.863402) ">
-		          </path>
-		<!--Top Blue -->
-		          <path class="top-blue" d="M900.358765,89.234375 L585.953125,89.234375 L585.953125,169.234375 L923.427414,169.234375 L957.953125,169.234375 L944.160797,147.993202 L900.358765,89.234375 Z" id="Rectangle-3" fill="#104689" sketch:type="MSShapeGroup" transform="translate(771.953125, 128.234375) rotate(-30.000000) translate(-771.953125, -128.234375) ">
-		          </path>
-		        </g>
-		      </g>
-
-
-		</svg>
-		
+		<svg width="1280px" height="880px" viewBox="0 0 2881 935" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+			    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+			        <g id="Softdev" sketch:type="MSLayerGroup" transform="translate(-58.000000, 0.000000)">
+			            <path class="left-white" d="M58.0162966,0.492126572 L58.265397,0.0606720858 L58.0232761,132.291058 L1448.03044,934.812067 L1505.3484,835.534436 L58.0162966,0.492126572 Z" id="Rectangle-5" fill="#E7E7E7" sketch:type="MSShapeGroup"></path>
+			            <path class="right-white" d="M1660.09235,43.4001376 L1602.77439,142.677768 L2937.81488,913.463758 L2938.11212,781.265192 L1660.09235,43.4001376 Z" id="Rectangle-4" fill="#E7E7E7" sketch:type="MSShapeGroup"></path>
+			            <rect class="middle" data-animation="rotate-mid"  id="Rectangle-6" fill="#104689" sketch:type="MSShapeGroup" transform="translate(1553.000000, 488.500000) rotate(30.000000) translate(-1553.000000, -488.500000) " x="1266" y="431" width="574" height="7.15pc"></rect>
+			            <path class="bottom-blue" d="M1333.58759,869.220738 L1449.30415,934.721184 L1887.41241,681.779262 L1830.12075,582.547184 L1333.58759,869.220738 Z" id="Rectangle-1" fill="#1E70C0" sketch:type="MSShapeGroup" ></path>
+			            <path class="top-blue" d="M1220.07844,297.394189 L1276.82323,395.679043 L1773.21138,109.08921 L1660.05846,43.3716066 L1220.07844,297.394189 Z" id="Rectangle-2" fill="#1E70C0" sketch:type="MSShapeGroup"></path>
+			        </g>
+			    </g>
+			</svg>
+			
+			
 		<div id="title" ><h1>ISB Software Development Club</h1>
 			<h3>Improving ISB Bit by Bit</h3>
 		</div>
