@@ -35,7 +35,7 @@ function onScroll(){
 	var offsetThing = document.getElementsByTagName("body")[0];
 	//var display = document.getElementById("offset");
 	//display.innerHTML = offsetThing.scrollTop;
-	var doneScrollingAt = 45;//45
+	var doneScrollingAt = 50;//45
 	var height = $(window).height();
 	var scroll = (offsetThing.scrollTop/(height*doneScrollingAt/100));
 	//middle
