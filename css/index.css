@@ -2,11 +2,6 @@ body{
 	background:url("../images/background.png");
 }
 #landingContent{
-	/*max-width:100%;
-	height:100vh;
-	overflow:hidden;
-	z-index:5;
-	position:relative;*/
 	margin-top:10vh;
 	height:95vh;
 }
@@ -31,7 +26,6 @@ h1 {
 	width:100vw;
 	z-index:10;
 }
-
 .softdev{ 
 	position: absolute; 
 	top: 33%; 
@@ -59,4 +53,32 @@ h1 {
 #title h3{
 	line-height:10px;
 }
-
+svg{
+	margin-top:-16em;
+	top:200;
+	position:absolute;
+	max-width:100vw;
+}
+#landingContent{
+	max-height:100vh;
+	width:100vw;
+}
+body{
+	max-width:100vw;
+}
+/*SVG Logo Styling*/
+.bottom-blue {
+	-webkit-transform-origin: 50% 50%;
+}
+.top-blue{
+	-webkit-transform-origin: 50% 50%;
+}
+.middle{
+	-webkit-transform-origin: 50% 50%;
+}
+.left-white{
+	-webkit-transform-origin: 50% 50%;
+}
+.right-white{
+	-webkit-transform-origin: 50% 50%;
+}

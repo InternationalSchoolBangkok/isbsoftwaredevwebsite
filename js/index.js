@@ -1,20 +1,16 @@
-/*$( document ).ready(function() {
-$('.middle').css({
-'-webkit-transform': 'rotate(0deg)'
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
+		var target = this.hash,
+		$target = $(target);
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 400, 'swing', function () {
+			window.location.hash = target;
+		});
+	});
+
 });
-$('.top-blue').css({
-'-webkit-transform': 'rotate(30deg) translate(40pc,-2.69pc)' ,'fill':'#104689',					 
-});
-$('.bottom-blue').css({
-'-webkit-transform': 'rotate(30deg) translate(-40pc,2.5pc)', 'fill':'#104689',
-});
-$('.left-white').css({
-'-webkit-transform': 'rotate(-30deg) translate(-40pc,-22.65pc)', 'fill':'#104689',
-});
-$('.right-white').css({
-'-webkit-transform': 'rotate(-30deg) translate(37pc,23.1pc)','fill':'#104689',
-});		
-});*/
 function componentToHex(c) {
 	var hex = c.toString(16);
 	return hex.length == 1 ? "0" + hex : hex;
