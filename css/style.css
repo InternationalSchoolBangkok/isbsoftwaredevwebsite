@@ -7,15 +7,11 @@ img {
 	border: 0;
 }
 
-body {
-	margin: 0;
-	font-family: 'Helvetica';
-	font-weight: 200;
-	font-size: 14px;
-	line-height: 20px;
-	color: #333333;
-	background-color: black;
-}
+			body {
+				font-family: Calibri;
+				font-size: 14px;
+                line-height: 100%;
+			}
 a {
 	color: #0088cc;
 	text-decoration: none
@@ -33,39 +29,52 @@ a:hover, a:focus {
 	margin-left: auto;
 }
 p {
-	margin: 0 0 10px
+	margin: 0 0 10px;
+    font-family: 
 }
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
-	font-family: inherit;
-	font-weight: bold;
-	line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 	400;
 	color: inherit;
 }
-h1, h2, h3 {
-	line-height: 40px
+h1,h2,h3{
+line-height: 30px;
 }
 h1 {
-	margin: 0 0 20px;
-	text-align: center;
-	text-transform:uppercase;
-	font-size:2em;
-	letter-spacing:1px;
+        text-align: 	center;
+        text-transform: uppercase;
+		letter-spacing:.1em;
+        font-weight: 	400;
+        font-family: 'Roboto', sans-serif;
+        font-size:2.6em;
 }
 h2 {
-	font-size: 31.5px
+	font-size: 31.5px;
+    
 }
 h3 {
-	font-size: 24.5px
+	font-size: 24.5px;
+    text-transform: lowercase;
+    
 }
 h4 {
-	font-size: 17.5px
+	font-size: 17.5px;
 }
 h5 {
 	font-size: 14px
 }
 h6 {
 	font-size: 11.9px
+}
+
+.nav{
+	position:absolute;
+	top:0;
+    left:0;
+	width:100vw;
+	z-index:10;
 }
 
 .nav ul {
@@ -76,7 +85,8 @@ h6 {
   margin: 0;
 }
 .nav li {
- font-family: 'Helvetica Neue', arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
@@ -119,9 +129,12 @@ h6 {
     line-height: 50px;
     font-size: 1.2em;
   }
- 
+ body{
+padding-top:50px;
+ }
   /* Option 1 - Display Inline */
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
+}
