@@ -56,8 +56,6 @@ h2 {
 }
 h3 {
 	font-size: 24.5px;
-    text-transform: lowercase;
-    
 }
 h4 {
 	font-size: 17.5px;
@@ -70,7 +68,8 @@ h6 {
 }
 
 .nav{
-	position:absolute;
+	position:fixed;
+	z-index: 99999;
 	top:0;
     left:0;
 	width:100vw;
