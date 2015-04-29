@@ -6,13 +6,13 @@ var bio = [
 //nico
 "Nico has always been fascinated by society's ironic disability to craft its own software despite its utmost dependence on it. He realized that kids had the intelligence to do brilliant things but almost none where utilizing it to do so. All that was required was a push in the right direction.  Thus, the software development club was born.",
 //adit
-"No Bio",
+"Adit has always been intrigued by technology, especially the side of devices and software that users could not see. Despite a lack of experience in the field, he realized that other students also had a passion for the development of programs for others. Therefore he helped found the ISB Software Development Club to provide his peers with an outlet to learn and practice their skills in this area.",
 //kola
-"No Bio",
+"Happy Kola is happy, and with projects that finally require more than basic knowledge of programming, Happy Kola is happier than ever. Happy Kola is happy that by joining the Software Development Club, he is able to use his skills not for projects that will make only him happy, but ones that will benefit students and teachers and create great happiness in everyone who use them.",
 //judge
 "No Bio",
 //kat
-"No Bio",
+"Katrina has always been fascinated by the Internet. As soon as she was old enough to realize that websites were made by real people and not magical internet fairies, she learned how to make her own. She joined Software Development Club to find more opportunities to practice and improve upon her hobby of web development.",
 //daiki
 "Daiki happens to be a 14 year old Japanese web designer that likes to infinitely solve the Rubik's cube, each under 35 seconds. He is obsessed with easter eggs. In other words, find the easter eggs.",
 //riddh
