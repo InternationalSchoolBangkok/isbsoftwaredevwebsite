@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:js/index.js.bu.js
 $(document).ready(function(){
 	$('a[href^="#"]').on('click',function (e) {
 		e.preventDefault();
@@ -11,6 +12,8 @@ $(document).ready(function(){
 	});
 
 });
+=======
+>>>>>>> Stashed changes:js/scroll.js
 function componentToHex(c) {
 	var hex = c.toString(16);
 	return hex.length == 1 ? "0" + hex : hex;
