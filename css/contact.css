@@ -1,6 +1,8 @@
 body{
-	background:url("../images/contactimages/back.jpg");
-	background-size: 100% auto
+	background:url("../images/contactimages/back.png");
+	background-width:10%;
+	background-repeat:no-repeat;
+	background-position: center top;
 }
 .text{
 	height:310px;
