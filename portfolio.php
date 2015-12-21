@@ -3,81 +3,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Our Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+  <?php include 'common1.php'; ?>
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
   <script type="text/javascript" src="portfolio/reflection.js"></script>
   <script src="portfolio/jquery.interpolate.js"></script>
   <script src="portfolio/jquery.coverflow.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-  h1{
-    text-align: 	center;
-    padding-top:20px;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-weight: 	400;
-    color: #3c7eae;
-    font-family: 'Roboto', sans-serif;
-    font-size:2.6em;
-  }
-
-  body {
-    background:url("images/background.png");
-  }
-
-  a{
-    color: #3c7eae;
-    text-decoration: none;
-  }
-  .photos .cover {
-    cursor: pointer;
-
-    /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
-  }
-
-  #photos-info {
-    position:		relative;
-    margin-left: 	auto;
-    margin-right: 	auto;
-    text-align:		center;
-    z-index:		99999999;
-    border-radius: 5px;
-    margin-top: 	270px;
-    padding: 		20px;
-    width: 			400px;
-    background: white;
-  }
-
-  #photos-name {
-    font-size: 140%;
-    letter-spacing: 1.1px;
-    line-height: 115%;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom:2.6px;
-  }
-
-
-  #photos-dl{
-    font-size: 110%;
-  }
-
-  #photos-desc{
-    text-align:justify;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #photos-link{
-    font-size: 110%;
-  }
-  .clearfix {
-    clear: both;
-  }
-  </style>
-
   <script>
   $(function() {
     $('.photos').coverflow({
@@ -100,15 +31,7 @@
   </script>
 </head>
 <body>
-  <div class="nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="portfolio.html">Projects</a></li>
-      <li><a href="memb.html">Our Team</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+  <?php include 'common2.php'; ?>
   <h1>our portfolio</h1>
   <div class="photos">
     <img class="cover" data-name="ISB Ace for OS X" data-desc="ISB Ace was the first project to be developed by the ISB Software Development club. This application features a variety of useful tools to assist the every-day ISB student! These features include:<br><ul><li>Your current grades</li><li>Notifications when your grades change</li><li>Your schedule</li><li>A news feed with the laters Panther Productions broadcasts and International articles</li></ul>Currently ISB Ace is available for Android devices and OSX, however the Software Development Club aims to release an iOS version this year as well." data-link="<a href='https://sites.google.com/a/students.isb.ac.th/hstech/software-development/isb-ace'>Download it here.</a>"  src="portfolio/img/ISBACEOSX.png"/>

@@ -1,15 +1,13 @@
+body {
+	font-family: 'Josefin Sans', serif;
+	font-size: 14px;
+}
 img {
 	max-width: 100%;
 	width: auto\9;
 	height: auto;
 	vertical-align: middle;
 	border: 0;
-}
-
-body {
-	font-family: Avenir;
-	font-size: 14px;
-	line-height: 100%;
 }
 a {
 	color: #0088cc;
@@ -29,42 +27,8 @@ a:hover, a:focus {
 }
 p {
 	margin: 0 0 10px;
-	
-	}
 
-	h1, h2, h3, h4, h5, h6  {
-	margin: 10px 0;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	color: inherit;
 }
-h1, h2, h3 {
-	line-height: 30px;
-}
-h1 {
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: .1em;
-	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
-	font-size: 2.6em;
-}
-h2 {
-	font-size: 31.5px;
-}
-h3 {
-	font-size: 24.5px;
-}
-h4 {
-	font-size: 17.5px;
-}
-h5 {
-	font-size: 14px
-}
-h6 {
-	font-size: 11.9px
-}
-
 .nav {
 	position: fixed;
 	z-index: 99999;
@@ -73,7 +37,6 @@ h6 {
 	width: 100vw;
 	z-index: 10;
 }
-
 .nav ul {
 	list-style: none;
 	background-color: #444;
@@ -82,7 +45,6 @@ h6 {
 	margin: 0;
 }
 .nav li {
-	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 1.2em;
 	line-height: 40px;
@@ -95,6 +57,8 @@ h6 {
 	color: #fff;
 	display: block;
 	transition: .3s background-color;
+	text-shadow: 3px 3px 7px #000;
+
 }
 
 .nav a:hover {

@@ -2,73 +2,57 @@ body{
 	background:url("../images/background.png");
 	max-width:100vw;
 	margin:0;
-
-	
+}
+#greetings{
+	text-align:center;
+	position: absolute;
+	top:43%;
+	width: 100%;
+	text-align:center;
+}
+#greetings h1{
+	font-size: 3em;
+	letter-spacing: .12em;
+	line-height: 1em;
+	font-weight: 400;
+	color: #000;
+}
+#greetings h2{
+	font-size: 2em;
+	color: #B7B7B7;
+	margin-top: -.9em;
 }
 #landingContent{
 	margin-top:10vh;
 	height:95vh;
 }
-#aboutContent{
-	background:url("../images/back.png"); /*was crossword.png*/
-	/*color:black;*/
+#about{
+	background:#f8f8ff;
+	background:rgba(248,248,255,0.2);
 	color:white;
 	padding-left:15vw;
 	padding-right:15vw;
 	padding-top:3vh;
 	height:100vh;
-
 }
-h1 {
-	margin: 0 0 20px;
-	text-align: center;
-    line-height: 40px;
+#about h1{
+	font-size: 3em;
 }
-.softdev{ 
-	position: absolute; 
-	top: 33%; 
-	left:27%;
-	width: 100%; 
-	margin:0;
-	text-align:center;
-	/*experimental*/
-	text-shadow:
-	-1px -1px 0 #FFF,
-	1px -1px 0 #FFF,
-	-1px 1px 0 #FFF,
-	1px 1px 0 #FFF;  
+#about p{
+	font-size: 1.3em;
+	color: #B7B7B7;
 }
-#title{
-	text-align:center;
-	position: absolute; 
-	top:42%;
-	width: 100%; 
-	font-family
-	text-align:center;
-	font-family: "Lucida Grande";
-	font-size: 18px;
-	color: white;
-}
-#title h3{
-	line-height:10px;
+#landingContent{
+	max-height:100vh;
+	width:100vw;
 }
 svg{
 	margin-top:-8em;
 	top:200;
 	position:absolute;
-    left:0;
-    
+  left:0;
 	max-width:100vw;
 	height:100vh;
-
-}
-#landingContent{
-	max-height:100vh;
-	width:100vw;
-
-}
-body{
-	max-width:100vw;
 }
 /*SVG Logo Styling*/
 .bottom-blue {

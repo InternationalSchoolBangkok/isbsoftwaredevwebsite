@@ -1,0 +1,65 @@
+h1{
+  text-align: 	center;
+  padding-top:20px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 	400;
+  color: #3c7eae;
+  font-family: 'Roboto', sans-serif;
+  font-size:2.6em;
+}
+
+body {
+  background:url("../images/background.png");
+}
+
+a{
+  color: #3c7eae;
+  text-decoration: none;
+}
+.photos .cover {
+  cursor: pointer;
+
+  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, .5)));*/
+}
+
+#photos-info {
+  position:		relative;
+  margin-left: 	auto;
+  margin-right: 	auto;
+  text-align:		center;
+  z-index:		99999999;
+  border-radius: 5px;
+  margin-top: 	270px;
+  padding: 		20px;
+  width: 			400px;
+  background: white;
+}
+
+#photos-name {
+  font-size: 140%;
+  letter-spacing: 1.1px;
+  line-height: 115%;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom:2.6px;
+}
+
+
+#photos-dl{
+  font-size: 110%;
+}
+
+#photos-desc{
+  text-align:justify;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photos-link{
+  font-size: 110%;
+}
+.clearfix {
+  clear: both;
+}

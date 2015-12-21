@@ -2,24 +2,12 @@
 <html>
 <head>
 	<title>Software Development</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<?php include 'common1.php'; ?>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 	<script src="js/index.js" type="text/javascript"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-            
 </head>
 <body onscroll="onScroll()">
-
-	<div class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="portfolio.html">Projects</a></li>
-			<li><a href="memb.html">Our Team</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
+	<?php include 'common2.php'; ?>
 	<div id="landingContent">
 		<svg viewBox="500 220 1800 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
 			<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
@@ -32,15 +20,15 @@
 				</g>
 			</g>
 		</svg>
-		<div id="title" ><h1><span style="text-transform:uppercase;">ISB Software Development Club</h1></span>
-			<h3><span style="color: #3c7eae;">Improving ISB Bit by Bit</span></h3>
+		<div id="greetings">
+			<h1 id="title">ISB SOFTWARE DEVELOPMENT CLUB</h1>
+			<h2 id="motto">Improving ISB Bit by Bit</h2>
 		</div>
 	</div>
-	<div id="aboutContent">
-		<a id="about"></a>
+	<div id="about">
 		<br/><br/><br/><br/><br/><br/>
 		<h1>A Little Bit About Us</h1>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ISB Software Developement club commits itself to creating quality software solutions for the benefit fo our clients, our community, and eventually the world.  We offer real work experience to kids stuck in a community of almost no job opportunities.  Software Dev. is also a genuine software developing contractor and considers job offers from any internal or external entities.  Take a look at our portfolio to check out what we've done in the past.</p>
+		<p>&emsp;The ISB Software Developement club commits itself to creating quality software solutions for the benefit fo our clients, our community, and eventually the world.  We offer real work experience to kids stuck in a community of almost no job opportunities.  Software Dev. is also a genuine software developing contractor and considers job offers from any internal or external entities.  Take a look at our portfolio to check out what we've done in the past.</p>
 	</div>
 </body>
 <footer>
