@@ -4,8 +4,7 @@
 	<title>Software Development</title>
 	<?php include 'common1.php'; ?>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-	<script src="js/jquery.bxslider.js"></script>
-
+	<script src="js/contact.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body style="display: block;">
@@ -16,7 +15,7 @@
 				<div class="contacttext">
 					<div>
 						<img src="images/contactimages/email.png" width="12%" height="12%" hspace="2%"/>
-						<a href= "mailto:contact@studentdevelopers.isb.ac.th"> contact@studentdevelopers.isb.ac.th</a>
+						<a href= "mailto:contact@studentdevelopers.isb.ac.th">contact@studentdevelopers.isb.ac.th</a>
 					</div>
 					<div class="contactsocial">
 						<a href="https://www.facebook.com/isbhstech" target="_blank"><img src= "images/contactimages/facebook.png" width= "10%" height="10%" hspace="5%" vspace="2%">Facebook</a>
@@ -26,7 +25,7 @@
 		</div>
 		<div id="formDiv" class="form-style-6">
 			<h1>Contact us through email or through this form</h1>
-			<form method="post" onsubmit="onSubmit()" action="grades.php">
+			<form method="post" onsubmit="return onSubmit(this);" action="email.php">
 				<input type="text" name="name" placeholder="Name" />
 				<input type="text" name="organization" placeholder="Organization" />
 				<input type="text" name="email" placeholder="Email *" />
