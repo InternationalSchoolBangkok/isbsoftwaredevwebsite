@@ -4,8 +4,9 @@
 	<title>Software Development</title>
 	<?php include 'common1.php'; ?>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/icon">
 	<script src="js/jquery.bxslider.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body style="display: block;">
 	<div class="content">
@@ -22,6 +23,16 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="formDiv" class="form-style-6">
+			<h1>Contact us through email or through this form</h1>
+			<form method="post" onsubmit="onSubmit()" action="grades.php">
+				<input type="text" name="name" placeholder="Name" />
+				<input type="text" name="organization" placeholder="Organization" />
+				<input type="text" name="email" placeholder="Email *" />
+				<textarea cols='20' rows ='3' name='message' placeholder="Message *"></textarea>
+				<input type="submit" value="Submit" />
+			</form>
 		</div>
 	</div>
 </body>

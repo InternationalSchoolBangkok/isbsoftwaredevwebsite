@@ -1,10 +1,22 @@
 $(document).ready(function(){
-	$("#scroll").click(function(e) {
+	var url = window.location.href;
+	if(url.indexOf("?about")!=-1){
+		$('html, body').animate({
+			scrollTop: $("#about").offset().top
+		}, 700);
+	}
+	$("#about-button").click(function(e) {
 		e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 500);
-});
+		$('html, body').animate({
+			scrollTop: $("#about").offset().top
+		}, 500);
+	});
+	$("#home-button").click(function(e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: "0px"
+		}, 500);
+	});
 });
 function componentToHex(c) {
 	var hex = c.toString(16);

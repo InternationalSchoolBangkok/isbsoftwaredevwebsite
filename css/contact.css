@@ -1,26 +1,24 @@
 body{
-	background:url("../images/contactimages/back.png");
+	/*background:url("../images/contactimages/back.png");*/
+	background: url("../images/background.png");
 	background-width:10%;
-	background-repeat:no-repeat;
 	background-position: center top;
 }
 .text{
 	height:310px;
 	width:100%;
-
 }
 
 .contactbox {
-	position: absolute; 
-	top: 13%; 
-	width: 100%; 
+	position: absolute;
+	display: inline-block;
+	top: 25vh;
+	width: 100%;
 	text-align:center;
-	width: 40%;
+	width: 40vw;
 	padding-bottom: 22px;
-	left:57%;
-	margin-right: 3em;
+	left:50vw;
 	background-color: rgba(198,198,198,0.8);
-
 }
 .contacttext {
 	position: relative;
@@ -41,4 +39,90 @@ body{
 	padding: -3em;
 	border-top: 1px solid #BDBDBD;
 	border-collapse: separate;
+}
+#formDiv{
+	position: absolute;
+	top: 22.5vh;
+	left: 10vw;
+	display: inline-block;
+}
+/*Styled Form*/
+.form-style-6{
+    font: 95% "Josefin Sans", Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #3C7EAE;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="password"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="password"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #3C7EAE;
+    padding: 3%;
+    border: 1px solid #3C7EAE;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #3C7EAE;
+    border-bottom: 2px solid #4a91c4;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #4a91c4;
 }
