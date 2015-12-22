@@ -4,7 +4,7 @@
 	<title>Software Development</title>
 	<?php include 'common1.php'; ?>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-	<script src="js/contact.js"></script>
+	<script src="js/contact.js?1"></script>
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body style="display: block;">
