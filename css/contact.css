@@ -49,10 +49,16 @@ body{
 /*Styled Form*/
 .form-style-6{
     font: 95% "Josefin Sans", Helvetica, sans-serif;
-    max-width: 400px;
+    position: absolute;
+	display: inline-block;
+	top: 25vh;
+	width: 100%;
+	text-align:center;
+	width: 30vw;
+	left:20vw;
     margin: 10px auto;
     padding: 16px;
-    background: #F7F7F7;
+    background: #f7f7f7;
 }
 .form-style-6 h1{
     background: #3C7EAE;
