@@ -428,7 +428,8 @@ $displayWeek = $cache["current-week"];
 <body>
 	<div class='menuclicky'>Menu
 	</div>
-    <div class="disc">Disclaimer: menu subject to change without prior notice depending on availability<br>
+    <div class="disc">GF=gluten free, EF=egg free, DF=dairy free, OS/ F=oyster sauce, fish ingredient, V=vegetarian
+<br>Disclaimer: menu subject to change without prior notice depending on availability<br>
  -	Notice: All allergy information for dishes is available at food booths</div>
 
 	<div class='menubar'>
