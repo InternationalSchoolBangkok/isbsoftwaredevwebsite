@@ -430,7 +430,7 @@ $displayWeek = $cache["current-week"];
 	</div>
     <div class="disc">GF=gluten free, EF=egg free, DF=dairy free, OS/ F=oyster sauce, fish ingredient, V=vegetarian
 <br>Disclaimer: menu subject to change without prior notice depending on availability<br>
- -	Notice: All allergy information for dishes is available at food booths</div>
+Note: Click on the photos for Allergy and Menu info</div>
 
 	<div class='menubar'>
 		<ul>
