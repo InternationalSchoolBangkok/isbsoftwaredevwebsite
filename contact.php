@@ -15,7 +15,7 @@
 				<div class="contacttext">
 					<div>
 						<img src="images/contactimages/email.png" width="12%" height="12%" hspace="2%"/>
-						<a href= "mailto:contact@studentdevelopers.isb.ac.th">contact@studentdevelopers.isb.ac.th</a>
+						<a href= "mailto:15998@students.isb.ac.th">15998@students.isb.ac.th</a>
 					</div>
 					<div class="contactsocial">
 						<a href="https://www.facebook.com/isbhstech" target="_blank"><img src= "images/contactimages/facebook.png" width= "10%" height="10%" hspace="5%" vspace="2%">Facebook</a>
